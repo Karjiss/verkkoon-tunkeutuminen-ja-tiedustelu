@@ -18,3 +18,9 @@
 
 
 ## x) Spektrini
+
+<img width="1172" height="614" alt="image" src="https://github.com/user-attachments/assets/b51dd537-51e6-4eee-bc83-49fbfba49dbf" />
+
+- Taajuus kasvaa vasemmalta oikealle spektrissä.
+- Taajuuden kasvaessa antennin pituus, aallon pituus ja läpäisy pienenee.
+- Mitä korkeampi taajuus, sitä suurempi kyky siirtää tietoa. 
