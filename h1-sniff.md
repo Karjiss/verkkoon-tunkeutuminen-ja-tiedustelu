@@ -19,8 +19,11 @@
 
 ## x) Spektrini
 
-<img width="1172" height="614" alt="image" src="https://github.com/user-attachments/assets/b51dd537-51e6-4eee-bc83-49fbfba49dbf" />
+<img width="1191" height="616" alt="Aaltospektri" src="https://github.com/user-attachments/assets/0ba7d608-5053-477f-b388-1967e71b19ad" />
 
 - Taajuus kasvaa vasemmalta oikealle spektrissä.
 - Taajuuden kasvaessa antennin pituus, aallon pituus ja läpäisy pienenee.
 - Mitä korkeampi taajuus, sitä suurempi kyky siirtää tietoa. 
+
+
+## a) WebSDR
