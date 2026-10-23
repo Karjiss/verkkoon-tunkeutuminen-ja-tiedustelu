@@ -1,4 +1,4 @@
-# h1 - sniff
+# h1 - Korva netissä
 
 - Kurssi: [Verkkoon tunkeutuminen ja tiedustelu](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/) (Karvinen 2026)
 - Opettaja: Tero Karvinen
@@ -14,4 +14,7 @@
 - Virtualisointiohjelmisto: **VMWare Workstation Pro**
 
 
- ## x) Lue ja tiivistä
+
+
+
+## x) Spektrini
