@@ -97,4 +97,6 @@ Hieman särisevä ääni, mutta selkeästi puhetta ruotsiksi. Muutin vähän kai
 
 Valitsin myös äänenvoimakkuusasetuksista päälle kohdan: ```squelch```, jonka olisi tarkoitus vähentää suhinaa.
 
+## c) ADS-B
 
+Tehtävänä oli etsiä kiinnostava lentokone ADS-B Exchange -palvelusta. Konetta ja sen lentoa piti kuvailla.
