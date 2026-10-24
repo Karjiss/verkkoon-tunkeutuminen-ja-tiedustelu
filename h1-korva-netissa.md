@@ -60,7 +60,7 @@ Säätelin taajuutta löytääkseni selkeänkuuloisen lähetyksen kohteesta:
 - Kuulostaa joltain pastorilta saarnaamassa.
 
 - Taajuus: ```1009.85 kHz```.
-- Aallonpituus: ```297,07 metriä```.
+- Aallonpituus ($\lambda$) : ```297,07 metriä```.
 
 Modulaatioasetukset:
 
@@ -76,4 +76,27 @@ Aallonpituus lasketaan kaavalla: ```λ = v / f``` (Radio-Amatööri-Wiki 2006)
 
 
 ## b) Moduwhat?
+
+Aikaisemmassa tehtävässä modulaatioasetus oli AM, joten seuraavaksi kokeilin käyttää FM-modulaatiota.
+
+Aloitin taas [WebSDR](http://websdr.org/)-sivustolta etsimällä eri asemaa.
+
+Valitsin listalta aseman, joka sijaitsee Ruotsissa:
+
+<img width="1837" height="137" alt="image" src="https://github.com/user-attachments/assets/7aa48bfb-9ea2-494b-a508-669adec0652c" />
+
+Käynnistin äänet sivun yläosasta kohdasta: ```No audio? Click here!```
+
+Seuraavaksi laitoin modulaatioasetuksista ```FM``` päälle, muutin kaistan 10 metriin ja aloin säätämään taajuuksia:
+
+<img width="1026" height="503" alt="image" src="https://github.com/user-attachments/assets/a2f6816b-6060-4906-ac8a-edbc4ac72756" />
+
+- Löytyi jotain!
+- Taajuus: ```29750.00 KHz```
+- Aallonpituus ($\lambda$) : ```10,08 metriä```
+
+Hieman särisevä ääni, mutta selkeästi puhetta ruotsiksi. Muutin vähän kaistanleveyttä edestakaisin, mutta ei vaikuttanut kauheasti tulokseen.
+
+Valitsin myös äänenvoimakkuusasetuksista päälle kohdan: ```squelch```, jonka olisi tarkoitus vähentää suhinaa.
+
 
