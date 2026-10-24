@@ -68,7 +68,7 @@ Modulaatioasetukset:
 
 - Käytössä: ```AM```.
 
-Aallonpituus lasketaan kaavalla: ```λ = v / f``` (Radio-Amatööri-Wiki 2006)
+Aallonpituus lasketaan kaavalla: $\lambda = \frac{c}{f}$ (Radio-Amatööri-Wiki 2006)
 
 
 
