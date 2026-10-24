@@ -55,9 +55,25 @@ Säätelin taajuutta löytääkseni selkeänkuuloisen lähetyksen kohteesta:
 
 <img width="1211" height="484" alt="image" src="https://github.com/user-attachments/assets/c4ffbc99-dcef-4493-9726-8e1113989522" />
 
+
+
 - Kuulostaa joltain pastorilta saarnaamassa.
-- En säätänyt mitään muuta kuin taajuutta.
+
 - Taajuus: ```1009.85 kHz```.
+- Aallonpituus: ```297,07 metriä```.
+
+Modulaatioasetukset:
+
+<img width="550" height="121" alt="image" src="https://github.com/user-attachments/assets/5c1fc17c-240e-461e-816b-b8954e21c44e" />
+
+- Käytössä: ```AM```.
+
+Aallonpituus lasketaan kaavalla: ```λ = v / f``` (Radio-Amatööri-Wiki 2006)
+
+
+
+
+
 
 ## b) Moduwhat?
 
