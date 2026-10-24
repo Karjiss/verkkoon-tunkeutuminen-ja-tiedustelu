@@ -99,4 +99,6 @@ Valitsin myös äänenvoimakkuusasetuksista päälle kohdan: ```squelch```, jonk
 
 ## c) ADS-B
 
-Tehtävänä oli etsiä kiinnostava lentokone ADS-B Exchange -palvelusta. Konetta ja sen lentoa piti kuvailla.
+Tehtävänä oli etsiä kiinnostava lentokone ADS-B Exchange -palvelusta. Konetta ja sen lentoa piti kuvailla, sekä selittää mistä tieto on saatu.
+
+
