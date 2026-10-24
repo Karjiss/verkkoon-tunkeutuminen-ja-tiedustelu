@@ -60,16 +60,14 @@ Säätelin taajuutta löytääkseni selkeänkuuloisen lähetyksen kohteesta:
 - Kuulostaa joltain pastorilta saarnaamassa.
 
 - Taajuus: ```1009.85 kHz```.
-- Aallonpituus ($\lambda$) : ```297,07 metriä```.
+- Aallonpituus ($\lambda$) : ```297,07 metriä```. **Aallonpituus lasketaan kaavalla:** $\lambda = \frac{c}{f}$ (Radio-Amatööri-Wiki 2006)
+
 
 Modulaatioasetukset:
 
 <img width="550" height="121" alt="image" src="https://github.com/user-attachments/assets/5c1fc17c-240e-461e-816b-b8954e21c44e" />
 
 - Käytössä: ```AM```.
-
-Aallonpituus lasketaan kaavalla: $\lambda = \frac{c}{f}$ (Radio-Amatööri-Wiki 2006)
-
 
 
 
