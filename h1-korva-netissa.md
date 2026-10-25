@@ -60,7 +60,7 @@ Säätelin taajuutta löytääkseni selkeänkuuloisen lähetyksen kohteesta:
 - Kuulostaa joltain pastorilta saarnaamassa.
 
 - Taajuus: ```1009.85 kHz```.
-- Aallonpituus ($\lambda$) : ```297,07 metriä```. **Aallonpituus lasketaan kaavalla:** $\lambda = \frac{c}{f}$ (Radio-Amatööri-Wiki 2006)
+- Aallonpituus ($\lambda$) : ```297,07 metriä```. **Aallonpituus lasketaan kaavalla:** $\lambda = \frac{c}{f}$ ([Radio-Amatööri-Wiki 2006](https://wiki.sral.fi/wiki/Aallonpituus))
 
 
 Modulaatioasetukset:
@@ -99,6 +99,57 @@ Valitsin myös äänenvoimakkuusasetuksista päälle kohdan: ```squelch```, jonk
 
 ## c) ADS-B
 
-Tehtävänä oli etsiä kiinnostava lentokone ADS-B Exchange -palvelusta. Konetta ja sen lentoa piti kuvailla, sekä selittää mistä tieto on saatu.
+Tehtävänä oli etsiä kiinnostava lentokone [ADS-B Exchange](https://www.adsbexchange.com/) -palvelusta (ADS-B Exchange 2026). Konetta ja sen lentoa piti kuvailla, sekä selittää mistä tieto on saatu.
+
+Avasin etusivulta kartan kohdasta: ```VIEW THE MAP``` ja aloin tarkkailemaan lentoliikennettä.
+
+<img width="1440" height="926" alt="image" src="https://github.com/user-attachments/assets/8e73ee68-78d9-494e-a695-6bc3d0da554b" />
+
+- Aika paljon lentoliikennettä.
+
+Ajattelin filtteröidä vain armeijan lentokoneet kartalle:
+
+<img width="265" height="525" alt="image" src="https://github.com/user-attachments/assets/84238780-3f5b-4add-a477-4d7fbfacf978" />
+
+Tulokset nyt:
+
+<img width="1240" height="805" alt="image" src="https://github.com/user-attachments/assets/9e941ce4-d4fe-430d-bd3a-6904bfbcb5ef" />
+
+- Huomattavasti helpompaa poimia haluttu lento kartalta!
+
+Valitsin tarkkailtavaksi lennoksi Ison-Britannian kuninkaallisten ilmavoimien lennon:
+
+<img width="1449" height="925" alt="image" src="https://github.com/user-attachments/assets/127c7c4c-8a5d-4b48-a393-f2b4ff888e72" />
+
+- Linkki lentoon: https://globe.adsbexchange.com/?icao=43c5dc 
+- Callsign: ```RRR4277```
+- Lentokoneen tyyppi: ```AIRBUS A-400M```
+- Nopeus: ```328 solmua```
+- Korkeus: ```27975 jalkaa``` tai ```8526 metriä```
+- Lentosuunta: ```333.0°```
+- Lennon lähtöpiste: ```RAF Akrotiri```
+
+### Mistä tiedot saadaan? ([ADS-B Exchange 2026](https://www.adsbexchange.com/about/))
+
+Tiedonsaanti perustuu "ADS-B" -järjestelmään (Automatic Dependent Surveillance–Broadcast). Ilma-alukset lähettää säännöllisesti radiosignaaleilla tietoa, kuten nopeuden, korkeuden ja sijainnin.
+
+ADS-B Exchange saa tiedot harrastajien, oppilaitosten ja kumppaniorganisaatioiden maanpäällisiltä vastaanottimilta. ADS-B Exchange yhdistää vastaanottimien lähettämät tiedot saadakseen tarkan kuvan lennoista.
+
+
+## Lähteet
+
+ADS-B Exchange. 2026. About ADS-B Exchange. Luettavissa: https://www.adsbexchange.com/about/
+
+ADS-B Exchange. 2026. Home. Luettavissa: https://www.adsbexchange.com/
+
+ADS-B Exchange. 2026. Lento ICAO 43c5dc. Luettavissa: https://globe.adsbexchange.com/?icao=43c5dc
+
+Karvinen, T. 2026. Verkkoon tunkeutuminen ja tiedustelu -kurssisivu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
+
+KF5JMD WebSDR. 2026. WebSDR-vastaanotin, Gatesville, Texas. Luettavissa: http://sdr.kf5jmd.com:8901/
+
+Radio-Amatööri-Wiki. 2006. Aallonpituus. Luettavissa: https://wiki.sral.fi/wiki/Aallonpituus
+
+WebSDR.org. 2026. WebSDR.org-hakemisto. Luettavissa: http://websdr.org/
 
 
