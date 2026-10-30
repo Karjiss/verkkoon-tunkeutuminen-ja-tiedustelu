@@ -15,6 +15,27 @@
 
 ## x) Lue ja tiivistä
 
+### **Wireshark - Getting Started** ([Karvinen 2025a](https://terokarvinen.com/wireshark-getting-started/))
 
+- Voit suodattaa Wireshark sieppauksia erilaisilla suodattimilla, kuten:
+    - ```dns``` = Näyttää vain DNS tulokset
+    - ```tls``` = Näyttää TLS-salatut tulokset
+    - ```http``` = Näyttää salaamattomat http-yhteydet
+    - ```tcp.port == <PORTTI>``` = Porttisuodatin
+    - ```ip.addr == <IP-OSOITE>``` = IP-suodatin
+    - ```frame contains "STRING"``` = Etsii tekstin tuloksista
+
+
+### **Network Interface Names on Linux** ([Karvinen 2025b](https://terokarvinen.com/network-interface-linux/))
+
+- Network Interface, eli verkkoliitäntä on melkein kuin virtuaalinen verkkokortti.
+
+- Verkkoliitännän prefixit useimmissa moderneissa Linux-järjestelmissä:
+
+  | Prefix | Liitäntä |
+  | :---: | :---: |
+  | en | Ethernet |
+  | wl | WLAN |
+  | lo | Loopback-sovitin |
 
 ## b) Ei voi kalastaa. Osoita, että pystyt katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden
