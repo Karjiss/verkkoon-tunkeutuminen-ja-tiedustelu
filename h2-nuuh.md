@@ -50,7 +50,7 @@ Kokeilin pingata Googlen nimipalveluun komennolla: ```ping 8.8.8.8```
 
 - Verkko katki!
 
-Sama komento verkko päällä:
+Sama komento nettiyhteys päällä:
 
 <img width="638" height="238" alt="image" src="https://github.com/user-attachments/assets/962db1bb-71ad-4a94-b574-5c48e798e7c3" />
 
