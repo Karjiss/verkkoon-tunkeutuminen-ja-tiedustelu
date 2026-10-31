@@ -39,3 +39,19 @@
   | lo | Loopback-sovitin |
 
 ## b) Ei voi kalastaa. Osoita, että pystyt katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden
+
+Klikkasin verkkovalikkoa virtuaalikoneen yläosasta ja katkaisin yhteyden verkkoon: ```Wired connection 1``` klikkaamalla sen alla olevaa ```Disconnect``` -nappia.
+
+<img width="549" height="241" alt="image" src="https://github.com/user-attachments/assets/86653bbc-9738-4c94-bb4d-d511de6d6ea9" />
+
+Kokeilin pingata Googlen nimipalveluun komennolla: ```ping 8.8.8.8```
+
+<img width="622" height="228" alt="image" src="https://github.com/user-attachments/assets/9b6eaa70-3163-4176-a304-90c731ec86e9" />
+
+- Verkko katki!
+
+Sama komento verkko päällä:
+
+<img width="638" height="238" alt="image" src="https://github.com/user-attachments/assets/962db1bb-71ad-4a94-b574-5c48e798e7c3" />
+
+- Tadaa! Verkko toimii!
