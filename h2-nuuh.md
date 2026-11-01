@@ -89,3 +89,25 @@ Sieppasin eri verkossa lisää liikennettä ja valitsin HTTP-paketin tarkastelta
   | Application Layer | HTTP on sovellustason protokolla, joka tekee esimerkin pyynnön. |
 
 ([Wikipedia 2025](https://fi.wikipedia.org/wiki/TCP/IP-viitemalli)) ja ([GeeksforGeeks 2026](https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/))
+
+## e) Mitäs tuli surffattua?
+
+Latasin kurssisivulta [pcap](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap)-tiedoston, jossa oli tallennettu sieppaus verkosta.
+
+Sen sai avattua suoraan Wiresharkkiin, joten pääsin tutkimaan sieppausta.
+
+Aloitin selvittämällä tietokoneiden määrän klikkaamalla ```Statistics``` --> ```Endpoints```
+
+<img width="400" height="260" alt="image" src="https://github.com/user-attachments/assets/4125d740-ea3f-4369-b8d0-494b34270b6e" />
+
+Valitsin IPv4 välilehden:
+
+<img width="882" height="537" alt="image" src="https://github.com/user-attachments/assets/27419656-020d-4e70-a444-7b3e701883d5" />
+
+- 7 Tietokonetta, joista 5 on ulkopuolella siepatun verkosta.
+
+Sieppauksessa olevat protokollat löytyvät ```Statistics``` --> ```Protocol Hierarchy```.
+
+1. <img width="396" height="127" alt="image" src="https://github.com/user-attachments/assets/05e038c0-9e32-4398-8e2a-f7217b55c283" />
+
+2. <img width="434" height="194" alt="image" src="https://github.com/user-attachments/assets/e289e569-13a0-4017-852f-dd3b78f260fe" />
