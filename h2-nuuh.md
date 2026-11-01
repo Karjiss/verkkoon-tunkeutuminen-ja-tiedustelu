@@ -75,8 +75,17 @@ Avasin Firefoxin ja pysäytin sieppauksen siinä vaiheessa, kun tietoa alkoi tul
 
 ## d) Oikeesti TCP/IP
 
-> **_NOTE:_**  IP-osoitteet eroavat edellisestä tehtävästä, sillä olin eri verkossa.
 
 Sieppasin eri verkossa lisää liikennettä ja valitsin HTTP-paketin tarkasteltavaksi:
 
 <img width="1866" height="563" alt="image" src="https://github.com/user-attachments/assets/0001a0f2-951c-47d2-a22d-e553d8109e99" />
+
+
+| Kerros | Tehtävä |    
+  | :---: | :---: |
+  | Link Layer | Siirtää tiedon hyödyntäen fyysisiä johtoja, sekä MAC-osoitteita. |
+  | Internet Layer | Välittää tiedon tietokoneiden välillä IPv4-osoitteita hyödyntäen. |
+  | Transport Layer | Tässä tapauksessa TCP vastaa tiedon luotettavasta välityksestä. |
+  | Application Layer | HTTP on sovellustason protokolla, joka tekee esimerkin pyynnön. |
+
+([Wikipedia 2025](https://fi.wikipedia.org/wiki/TCP/IP-viitemalli)) ja ([GeeksforGeeks 2026](https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/))
