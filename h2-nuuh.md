@@ -50,6 +50,24 @@ Kokeilin pingata Googlen nimipalveluun komennolla: ```ping 8.8.8.8```
 
 - Verkko katki!
 
+## c) Wireshark
+
+Wireshark oli jo asennettuna virtuaalikoneellani, joten aloin heti sieppaamaan liikennettä omasta verkostani.
+
+Käynnistin Wiresharkin komennolla: ```wireshark```
+
+<img width="412" height="337" alt="image" src="https://github.com/user-attachments/assets/fc4060cf-f109-4597-8562-9b1581c28f38" />
+
+Seuraavaksi valitsin interfacen ```eth0```.
+
+Avasin Firefoxin ja pysäytin sieppauksen siinä vaiheessa, kun tietoa alkoi tulemaan Wiresharkiin.
+
+<img width="728" height="268" alt="image" src="https://github.com/user-attachments/assets/46493a02-4c76-4ec0-8c9e-c1630ee2377a" />
+
+- Parissa sekunnissa tuli erittäin paljon dataa.
+
+## d) Oikeesti TCP/IP
+
 Sama komento nettiyhteys päällä:
 
 <img width="638" height="238" alt="image" src="https://github.com/user-attachments/assets/962db1bb-71ad-4a94-b574-5c48e798e7c3" />
