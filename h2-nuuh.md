@@ -210,6 +210,8 @@ Kuvassa näkyy QUIC-protokollan kättely, sekä salattu liikenne kättelyn jälk
 ### Handshake-vaihe
 - Paketit 21-25
   - Näissä paketeissa käyttäjä ja palvelin vaihtavat handshake-paketteja, joissa salausavaimet ja varmenteet tulevat kuvioihin.
+    <img width="976" height="704" alt="image" src="https://github.com/user-attachments/assets/e5eb0a17-e7ff-4fbe-b2be-41701a7f3504" />
+
 
 ### Protected Payload -vaihe
 - Paketit 26-35
@@ -222,7 +224,27 @@ Huomasin myös, että QUIC:in kättely on erittäin nopea. Sieppauksen mukaan se
 
 ## Lähteet
 
+Check Point. s.a. What is QUIC?. Luettavissa: https://www.checkpoint.com/cyber-hub/network-security/what-is-quic/
 
+Chreer. 1.7.2021. How QUIC Works - The Handshake. Youtube-video. Katsottavissa: https://www.youtube.com/watch?v=fHBUOlvS3ts
+
+GeeksforGeeks. 11.6.2026. TCP/IP Model. Luettavissa: https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/
+
+Karvinen, T. 2025a. Wireshark - Getting Started. Luettavissa: https://terokarvinen.com/wireshark-getting-started/
+
+Karvinen, T. 2025b. Network Interface Names on Linux. Luettavissa: https://terokarvinen.com/network-interface-linux/
+
+Karvinen, T. 2026. surfing-secure.pcap. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap
+
+Karvinen, T. 2026. Verkkoon tunkeutuminen ja tiedustelu -kurssisivu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
+
+MacLookup. 2026. MAC Address Lookup. Luettavissa: https://maclookup.app/search/result?mac=52:54:00:2f:e1:e5
+
+PureUtil. 2026. MAC Address Lookup. Luettavissa: https://www.pureutil.org/tools/mac-address-lookup
+
+Spotify. s.a. Spotify for Developers. Luettavissa: https://developer.spotify.com/documentation/commercial-hardware/implementation/faqs
+
+Wikipedia. 29.11.2025. TCP/IP-viitemalli. Luettavissa: https://fi.wikipedia.org/wiki/TCP/IP-viitemalli
 
 
 
