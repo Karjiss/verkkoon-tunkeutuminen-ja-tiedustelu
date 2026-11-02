@@ -1,4 +1,4 @@
-<img width="1546" height="415" alt="image" src="https://github.com/user-attachments/assets/232eb905-1e7c-4e0e-970b-61d6623220e6" /># h2 - Nuuh
+# h2 - Nuuh
 
 - Kurssi: [Verkkoon tunkeutuminen ja tiedustelu](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/) (Karvinen 2026)
 - Opettaja: Tero Karvinen
