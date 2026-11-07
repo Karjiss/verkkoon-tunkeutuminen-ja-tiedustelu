@@ -38,7 +38,7 @@ Latasin rtl_433-ohjelman Linuxille syöttämällä terminaaliin komennon: ```sud
 <img width="599" height="131" alt="image" src="https://github.com/user-attachments/assets/13c6f762-5564-4256-9ff1-af5c7f2fde40" />
 
 - Ladattu!
-- Ilmoittaa, että ei ole sopivaa laitetta vastaanottamaan dataa.
+- Ilmoittaa ohjelman versionumeron ja kertoo, ettei löydä sopivaa laitetta vastaanottamaan dataa.
 
 
 ## c) Automaattinen analyysi
