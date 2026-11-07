@@ -30,3 +30,25 @@
 
 ## b) rtl_433
 
+**_NOTE:_**  Muutin tehtävänannon vihjeissä olevaa komentoa lataamiseen, sillä "rtl_433" ei löydä pakettia, mutta "rtl-433" löytää.
+
+Latasin rtl_433-ohjelman Linuxille syöttämällä terminaaliin komennon: ```sudo apt-get install rtl-433```
+
+<img width="599" height="131" alt="image" src="https://github.com/user-attachments/assets/13c6f762-5564-4256-9ff1-af5c7f2fde40" />
+
+- Ladattu!
+- Ilmoittaa, että ei ole sopivaa laitetta vastaanottamaan dataa.
+
+
+## c) Automaattinen analyysi
+
+Tätä tehtävää varten latasin näytesieppauksen [tehtävänannosta](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/samples/Converted_433.92M_2000k.cs8).
+
+Avasin ladatun sieppauksen komennolla: ```rtl_433 ./Downloads/Converted_433.92M_2000k.cs8```
+
+<img width="836" height="645" alt="image" src="https://github.com/user-attachments/assets/ca38b67c-50b3-4020-a94f-1e84347df9fe" />
+
+- 
+
+
+
