@@ -49,7 +49,12 @@ Avasin ladatun sieppauksen komennolla: ```rtl_433 ./Downloads/Converted_433.92M_
 
 <img width="836" height="645" alt="image" src="https://github.com/user-attachments/assets/ca38b67c-50b3-4020-a94f-1e84347df9fe" />
 
-- 
+Näytteestä löytyvät valmistajat ovat ainakin: ```KlikAanKlikUit-Switch```, ```Proove-Security``` ja ```Nexa-Security```.
+
+Signaalit lähetetään yhdestä ID:stä (8785315), jonka olettaisin olevan kaukosäädin. **8785315** lähettää OFF-komennon napista 3.
+
+Timestampien perusteella kaukosäädintä myös painetaan useita kertoja.
+
 
 
 
