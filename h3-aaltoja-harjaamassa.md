@@ -30,8 +30,8 @@
 
 ## b) rtl_433
 
-[!NOTE]
-Muutin tehtävänannon vihjeissä olevaa komentoa lataamiseen, sillä "rtl_433" ei löydä pakettia, mutta "rtl-433" löytää.
+> [!NOTE]
+> Muutin tehtävänannon vihjeissä olevaa komentoa lataamiseen, sillä "rtl_433" ei löydä pakettia, mutta "rtl-433" löytää.
 
 Latasin rtl_433-ohjelman Linuxille syöttämällä terminaaliin komennon: ```sudo apt-get install rtl-433```
 
