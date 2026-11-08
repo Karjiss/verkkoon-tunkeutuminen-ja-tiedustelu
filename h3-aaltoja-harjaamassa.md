@@ -123,7 +123,7 @@ Tässä tehtävässä käytin apuna ensimmäisen tehtävän Hubmartinin videota.
 
 Oikea modulaatio on ```ASK```.
 
-Aloitin tutkimalla näytteen ensimmäistä bittiä: 
+Aloitin tutkimalla näytteen ensimmäistä bittiä valitsemalla sen URH:in alaosasta ensimmäisestä ykkösestä. Zoomasin myös aaltokuvaa näyttämään sen paremmin: 
 
 > [!NOTE]
 > Tässä vaiheessa myös kiinnitin huomiota tiedostonimessä olevaan 2 miljoonan SPS-arvoon. Päätin muuttaa arvon URH:issa 2 miljoonaan (Ei mitään ideaa, vaikuttaako tämä lopputulokseen).
@@ -132,4 +132,40 @@ Aloitin tutkimalla näytteen ensimmäistä bittiä:
 
 - Pituus = 261,00 µs (0,000261 sekuntia)
 
-Yhden raakabitin pituus sekunteina on järjettömän lyhyt aika.
+Yhden raakabitin pituus sekunteina on järjettömän lyhyt aika. Verrataan esimerkiksi äänen nopeuteen, joka on 343 m/s, voidaan laskea kuljettu etäisyys yhden bitin aikana:
+
+Kaava = $s = v \cdot t$
+
+Eli S = 343 m/s * 0,000261 sekuntia.
+
+S = 0,089523 metriä.
+
+Tuossa ajassa siis ääni kulkee vain 8.95 senttiä.
+
+<img width="1898" height="467" alt="image" src="https://github.com/user-attachments/assets/a8ad19c4-1a9f-4b84-bd97-5a1cd1e98a6a" />
+
+- Tässä vielä kuva, jossa näkyy kun signaali on ykkösessä ja nollassa.
+
+En tosiaan ole varma, teinkö viimeisen tehtävän aivan okein, tai sisältyikö siihen kaikki tarvittavat asiat. Toivotaan näin!
+
+## Lähteet
+
+Cornelius. 2024. Decode 433.92 MHz weather station data. Luettavissa: https://www.onetransistor.eu/2022/01/decode-433mhz-ask-signal.html
+
+GeeksForGeeks. 2025. Amplitude Shift Keying. Luettavissa: https://www.geeksforgeeks.org/electronics-engineering/amplitude-shift-keying/
+
+Hubmartin. 2019. Universal Radio Hacker SDR Tutorial on 433 MHz radio plugs. YouTube-video. Katsottavissa: https://www.youtube.com/watch?v=sbqMqb6FVMY&t=199s
+
+Karvinen, T. 2026. Verkkoon tunkeutuminen ja tiedustelu -kurssisivu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
+
+Rohde & Schwarz. 2020. YouTube-video ASK-modulaatiosta. Katsottavissa: https://www.youtube.com/watch?v=eJ5m0Sbr2qw
+
+
+### Näytteet
+
+Tehtävä 1. https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/samples/Converted_433.92M_2000k.cs8
+
+Tehtävä 2. https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/samples/Recorded-HackRF-20250411_183354-433_92MHz-2MSps-2MHz.complex16s
+
+Tehtävä 3. https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/samples/1-on-on-on-HackRF-20250412_113805-433_912MHz-2MSps-2MHz.complex16s
+
