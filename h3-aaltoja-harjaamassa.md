@@ -134,7 +134,10 @@ Aloitin tutkimalla näytteen ensimmäistä bittiä valitsemalla sen URH:in alaos
 
 Yhden raakabitin pituus sekunteina on järjettömän lyhyt aika. Verrataan esimerkiksi äänen nopeuteen, joka on 343 m/s, voidaan laskea kuljettu etäisyys yhden bitin aikana:
 
-Kaava = $s = v \cdot t$
+
+Kaava:
+
+$s = v \cdot t$
 
 Eli S = 343 m/s * 0,000261 sekuntia.
 
