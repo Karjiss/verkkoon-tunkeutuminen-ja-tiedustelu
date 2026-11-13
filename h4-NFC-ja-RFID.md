@@ -1,4 +1,4 @@
-# h2 - Nuuh
+# h4 - NFC ja RFID
 
 - Kurssi: [Verkkoon tunkeutuminen ja tiedustelu](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/) (Karvinen & Iso-Anttila 2026)
 - Opettajat: Tero Karvinen & Lari Iso-Anttila
