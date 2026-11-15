@@ -101,7 +101,7 @@ Jäinkin miettimään, että onko tämä ongelma enemmänkin Yhdysvalloissa, sil
 
 Ambimat engineering team. 22.5.2023. Ambimat Electronics. Smart Card Selected APDU Commands. Luettavissa: https://ambimat.com/smart-card-selected-apdu-commands/. Luettu: 15.11.2026.
 
-Elder, J. 24.42026. 'Ghost Tapping' may let scammers skim tap-to-pay cards from inches away. News 4 San Antonio. Luettavissa: https://news4sanantonio.com/news/investigations/new-warning-ghost-tapping-may-let-scammers-skim-tap-to-pay-cards-from-inches-away. Luettu: 15.11.2026.
+Elder, J. 24.4.2026. 'Ghost Tapping' may let scammers skim tap-to-pay cards from inches away. News 4 San Antonio. Luettavissa: https://news4sanantonio.com/news/investigations/new-warning-ghost-tapping-may-let-scammers-skim-tap-to-pay-cards-from-inches-away. Luettu: 15.11.2026.
 
 Gemini 2026. Keskustelu tekoälyn kanssa. Prompt: Tutustu APDU komentojen rakenteeseen. Luettavissa: https://share.gemini.google/aUzHcb5IWvsj. Luettu: 16.11.2026.
 
