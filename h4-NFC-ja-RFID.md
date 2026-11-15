@@ -83,3 +83,28 @@ Suluissa olevat heksadesimaaliluvut ovat komentojen tunnisteet.
 
 ## 3. Tutki ja kerro minkä mielenkiintoisen RFID hakkerointi uutiset löysit
 
+### Major Backdoor in Millions of RFID Cards Allows Instant Cloning ([Naraine 2024](https://thehackernews.com/2024/03/dormakaba-locks-used-in-millions-of.html))
+
+Artikkeli kertoo siitä, miten Ranskalainen tietoturvayritys löysi takaoven yhden maailman isoimpien mikrosiruvalmistajien kortteihin. Haavoittuvuus mahdollisti välittömän RFID-älykortti kloonauksen, jonka johdosta hyökkääjä voisi avata toimistojen ja hotellien ovia ympäri maailmaa.
+
+Tällaiset haavoittuvuudet laajasti käytetyissä laitteissa ovat aina mielenkiintoisia. Tehdäänkö niille tarpeeksi pentestejä, ennen julkaisua?
+
+### 'Ghost Tapping' may let scammers skim tap-to-pay cards from inches away ([Elder 2026](https://news4sanantonio.com/news/investigations/new-warning-ghost-tapping-may-let-scammers-skim-tap-to-pay-cards-from-inches-away))
+
+Löysin myös mielenkiintoisen artikkelin "Ghost Tapping"-ilmiöstä, jossa hyökkääjät skimmaa uhrien pankkikortteja.
+
+Yhdysvalloissa rikolliset pyrkivät varastamaan korteilta tietoja tai rahaa lähimaksua hyödyntäen.
+
+Jäinkin miettimään, että onko tämä ongelma enemmänkin Yhdysvalloissa, sillä ymmärtääkseni maksukortit ovat huonommin suojattuja siellä kuin Euroopassa. Itse varaudun isoissa tapahtumissa siirtämään maksukortit esimerkiksi rintataskuun, jotta ainakin huomaan, jos jotain tapahtuu.
+
+## Lähteet
+
+Ambimat engineering team. 22.5.2023. Ambimat Electronics. Smart Card Selected APDU Commands. Luettavissa: https://ambimat.com/smart-card-selected-apdu-commands/. Luettu: 15.11.2026.
+
+Elder, J. 24.42026. 'Ghost Tapping' may let scammers skim tap-to-pay cards from inches away. News 4 San Antonio. Luettavissa: https://news4sanantonio.com/news/investigations/new-warning-ghost-tapping-may-let-scammers-skim-tap-to-pay-cards-from-inches-away. Luettu: 15.11.2026.
+
+Gemini 2026. Tutustu APDU komentojen rakenteeseen. URL: https://share.gemini.google/aUzHcb5IWvsj. Luettu: 16.11.2026.
+
+Karvinen, T. & Iso-Anttila, L. 2026. Verkkoon tunkeutuminen ja tiedustelu. Luettavissa: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/
+
+Naraine, R. 20.8.2024. Major Backdoor in Millions of RFID Cards Allows Instant Cloning. The Hacker News. Luettavissa: https://thehackernews.com/2024/03/dormakaba-locks-used-in-millions-of.html. Luettu: 15.11.2026.
