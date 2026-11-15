@@ -29,7 +29,10 @@
   | HSL-kortti | Matkan osto julkisissa | 
   | Passi | Matkustusturvallisuus, väärennysten ehkäisy jne. |
   
-Suojautumisen puolesta maksukortit, Apple pay, passi ja kotiavaimet ovat varmaankin turvallisimmat RFID-tuotteet minulla. Niiden liikenne on salattu hyvin. Haavoittuvimmat laitteet ovat varmasti koiran mikrosiru, parkkihallin ja roskaputkien avauslätkät. En omista mitään special lompoakkoa, mutta korttini ovat päällekäin vaikeuttaen urkintaa. Avaimenperästäni parkkihalli- ja roskislätkäni ovat huonossa asemassa, mutta riskin vaara on mielestäni niin pieni, ettei se haittaa.
+Suojautumisen puolesta maksukortit, Apple pay, passi ja kotiavaimet ovat varmaankin turvallisimmat RFID-tuotteet minulla. Niiden liikenne on salattu hyvin. Haavoittuvimmat laitteet ovat varmasti koiran mikrosiru, parkkihallin ja roskaputkien avauslätkät. 
+
+En omista mitään special lompakkoa, mutta korttini ovat päällekäin vaikeuttaen urkintaa. Avaimenperästäni parkkihalli- ja roskislätkäni ovat huonossa asemassa, mutta riskin vaara on mielestäni niin pieni, ettei se haittaa. En kanna passiani turhaan ympäriinsä, vaikka se onkin todennäköisesti turvallisin RFID-laite omistuksessani.
+
 
 
 ## 2. Tutustu APDU komentojen rakenteeseen
