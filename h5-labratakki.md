@@ -55,6 +55,12 @@ Loin verkkotopologian uudestaan korjatulla komennolla: ```sudo -E mn --topo sing
 
 - Xterm toimii!
 
+Syötin xterm-ikkunassa komennon: ```arp -n``` katsoakseni koneiden MAC-osoitteet.
+
+<img width="434" height="105" alt="image" src="https://github.com/user-attachments/assets/a7e39950-89d2-4df5-83c7-be7fdca18eec" />
+
+Sitten avasin työaseman "h3" komennolla: ```xterm h3``` ja syötin xterm-ikkunaan komennon: ```sysctl -w net.ipv4.ip_forward=1```
+
 ## b) Samassa hakemistossa on myös ICMP Spoofing ja TCP Session Hijacking. Aja molemmat labrat läpi ja kerro, miten molemmat tekniikat toimivat
 
 
