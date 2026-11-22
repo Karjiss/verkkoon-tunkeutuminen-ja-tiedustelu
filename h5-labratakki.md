@@ -110,11 +110,18 @@ Mielenkiintoinen demo!
 
 
 
-## b) Samassa hakemistossa on myös ICMP Spoofing ja TCP Session Hijacking. Aja molemmat labrat läpi ja kerro, miten molemmat tekniikat toimivat
+## b1) ICMP Spoofing
+
+Hyödynsin tehtävissä Network Security Labin GitHub [readme:tä](https://github.com/ssam246/Network-Security-Lab/tree/main) (ssam246).
+
+
+## b2) TCP Session Hijacking
 
 
 
-## c) Hakemistossa 02-SDN-DDos_Simulation tryout-kansiossa on työkalut, jotta voit ajaa TCP SYN-Flood-hyökkäyksen turvallisesti
+
+## c) 02-SDN-DDos_Simulation
+
 
 ### Kirjoita, miten ajoit hyökkäyksen ja miten kyseinen hyökkäys toimii
 
