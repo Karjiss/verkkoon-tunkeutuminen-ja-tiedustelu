@@ -110,17 +110,93 @@ Mielenkiintoinen demo!
 
 
 
-## b1) ICMP Spoofing
+## b) Samassa hakemistossa on myös ICMP Spoofing ja TCP Session Hijacking. Aja molemmat labrat läpi ja kerro, miten molemmat tekniikat toimivat
 
 Hyödynsin tehtävissä Network Security Labin GitHub [readme:tä](https://github.com/ssam246/Network-Security-Lab/tree/main) (ssam246).
 
 
-## b2) TCP Session Hijacking
+### 1. ICMP Spoofing
+
+Otin Kalilla jälleen SSH-yhteyden mininettiin, jossa siirryin labran skriptihakemistoon komennolla: ```cd lab/01-Network-Security-Lab/scripts/```
+
+<img width="732" height="246" alt="image" src="https://github.com/user-attachments/assets/e13223ad-13a9-4a6b-b2b0-b77a30d77e90" />
+
+- hub_topo.py = Luo labran verkkotopologian.
+- sniff_icmp.py = Kuuntelee ICMP-liikennettä.
+- spoof_icmp.py = Tekee itse väärentämisen.
+
+Aloitin ajamalla komennon: ```sudo -E python hub_topo.py``` (Käytin taas -E parametriä, joka korjaa xterm ongelmani.) Ajoin myös ```pingall```-komennon testatakseni yhteyden.
+
+<img width="361" height="242" alt="image" src="https://github.com/user-attachments/assets/9f2e02c5-7859-4b1e-9e02-07e46309c388" />
+
+- It works!
+
+Avasin xterm-ikkunat h1 ja h2 komennoilla: ```xterm h1``` ja ```xterm h2```.
+
+Käynnistin h1-terminaalissa Wiresharkin hyökkäyksen liikenteentarkkailua varten komennolla: ```wireshark &```
+
+Wiresharkissa kuuntelin adapteria ```h1-eth0```. Lisäksi käynnistin spooffaus-skriptin samassa terminaalissa komennolla: ```python spoof_icmp.py```
+
+<img width="602" height="386" alt="image" src="https://github.com/user-attachments/assets/00225756-695f-4e92-8bfc-e778e010f5dd" />
+
+- Hyökkäys uhrin pingiä vaille valmis.
+
+Ajoin h2-terminaalissa pingin komennolla: ```ping 10.0.0.1``` ja aloin seuraamaan Wireshark-liikennettä:
+
+<img width="957" height="417" alt="image" src="https://github.com/user-attachments/assets/b45adf22-020b-4145-91da-d645257ca0bf" />
+
+Wireshark kaappauksesta selviää että h2 lähettää ping requestin kohteeseen 10.0.0.1, johon h1 vastaa normaalisti ping replyllä. Seuraavaksi h1 lähettää kuitenkin väärennetyn samanlaisen reply-paketin, jonka huomaa esimerkiksi erilaisesta ID:stä. Oikeassa vastauksessa ID on request- ja reply-paketissa sama, kun taas väärennetyssä se on eri (id=0x0000).
+
+Väärennyksen huomaisi myös MAC-osoitteista, mikäli olisin ajanut spooffauksen vaikka h3-koneelta. Silloin erona olisi ollut ID ja source MAC. Skripti ```spoof_icmp_py``` muuttaa ymmärtääkseni myös lähettäjän IP-osoitteen samaksi, kuin oikean vastauksen lähettäjä.
 
 
+
+### TCP Session Hijacking
+
+Tässä labrassa käytetyt skriptit:
+
+```tcp_server.py``` = Luo simuloidun TCP-palvelimen.
+```tcp_client.py``` = Luo simuloidun TCP-työaseman.
+```sniff_tcp_session.py``` = Kuuntelee TCP-istunnon tietoja.
+```tcp_hijack.py``` = Skripti, joka tekee TCP-kaappauksen käyttäen väärennettyjä paketteja.
+
+Avasin terminaalit: ```h1```,```h2``` ja 2x ```h3```.
+
+Hyökkääjänä toimii h3, joten avasin h3-terminaalissa ensiksi mielenkiinnosta Wiresharkin jälleen komennolla: ```wireshark &``` ja aloin kuuntelemaan verkkoa ```h3-eth0```. Avasin myös TCP-istunnon tietojenkuuntelun komennolla: ```python sniff_tcp_session.py```
+
+Ajoin h1-terminaalissa komennon: ```python tcp_server.py```
+
+Sitten h2-terminaalissa komennon: ```python tcp_client.py```
+
+<img width="842" height="402" alt="image" src="https://github.com/user-attachments/assets/de2f4228-c484-43d6-9b8f-8f242cc4e3a7" />
+
+
+- Tässä kohtaa h1-työasema ottaa yhteyden h2-palvelimeen ja h3-snifferi poimii lokiin yhteyden ```SEQ``` ja ```ACK``` tiedot.
+
+
+Sitten ajoin hyökkäyksen toisessa h3-terminaalissa komennolla:```python tcp_hijack.py```
+
+<img width="839" height="406" alt="image" src="https://github.com/user-attachments/assets/3fca664d-dc11-4253-b50b-d2baa32aebcf" />
+
+**Wireshark**:
+
+<img width="710" height="362" alt="image" src="https://github.com/user-attachments/assets/96e75439-8a6c-4b36-823a-a2ee8e46bfea" />
+
+Readme ei sisällä tietoa siitä, miltä lopputuloksen pitäisi näyttää. Aloin kuitenkin analysoimaan asiaa.
+
+Ensiksi koneet h1 ja h2 keskustelevat keskenään ja luovat luotetun yhteyden. Noin puolen sekuntin kuluttua h1 sulkee yhteyden. Tässä vaiheessa h3 on nuuhkinut liikennettä ja h3 lähettää väärennetyn TCP-paketin sisältäen ```SEQ``` ja ```ACK``` tiedot kuittausta varten. Mielestäni tässä kohtaa tulee ongelmana se, että yhteys on jo suljettu siinä vaiheessa, kun kaappaus-skripti ajetaan.
+
+Wiresharkissa näkyvässä paketissa 13 h3 lähettää väärennetyn TCP-paketin h1-palvelimelle. Paketissa 14 palvelin vastaa ```RST```-vastauksella, joka sulkee yhteyden välittömästi ([Pico s.a](https://www.pico.net/kb/what-is-a-tcp-reset-rst/)).
+
+Uskon tämän johtuvan siitä, että oikea yhteys suljetaan ennen kaappausyritystä.
+
+<img width="1567" height="448" alt="image" src="https://github.com/user-attachments/assets/58e0e285-657f-4b53-83fd-40f035dfcc5b" />
+
+- Tässä näkyy oikeat paketit ja väärennetty paketti.
 
 
 ## c) 02-SDN-DDos_Simulation
+
 
 
 ### Kirjoita, miten ajoit hyökkäyksen ja miten kyseinen hyökkäys toimii
