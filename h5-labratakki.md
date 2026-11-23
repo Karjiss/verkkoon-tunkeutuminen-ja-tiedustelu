@@ -117,6 +117,7 @@ Hyödynsin tehtävissä Network Security Labin GitHub [readme:tä](https://githu
 
 ### 1. ICMP Spoofing
 
+
 Otin Kalilla jälleen SSH-yhteyden mininettiin, jossa siirryin labran skriptihakemistoon komennolla: ```cd lab/01-Network-Security-Lab/scripts/```
 
 <img width="732" height="246" alt="image" src="https://github.com/user-attachments/assets/e13223ad-13a9-4a6b-b2b0-b77a30d77e90" />
@@ -152,6 +153,8 @@ Väärennyksen huomaisi myös MAC-osoitteista, mikäli olisin ajanut spooffaukse
 
 
 ### TCP Session Hijacking
+
+TCP-Session Hijacking on hyökkäys, jossa kaapataan käynnissä oleva yhteys koneiden välillä. ([Abnormal 2026](https://abnormal.ai/learning/tcp-session-hijacking))
 
 Tässä labrassa käytetyt skriptit:
 
@@ -197,9 +200,35 @@ Uskon tämän johtuvan siitä, että oikea yhteys suljetaan ennen kaappausyritys
 
 ## c) 02-SDN-DDos_Simulation
 
+TCP SYN-Flood on palvelunestohyökkäys, jossa hyökkääjä pyrkii estämään palvelimen oikean liikenteen. Siinä hyökkääjä hyödyntää 3-vaiheista kättelyä lähettämällä paljon SYN-paketteja palvelimelle, sitten palvelin vastaa ja jää odottamaan vastausta, mitä ei tule. Hyökkääjä toistaa tätä, kunnes palvelin ei kykene toimimaan enään oikein. ([Cloudflare s.a](https://www.cloudflare.com/learning/ddos/syn-flood-ddos-attack/))
+
+Lähdin kokeilemaan TCP SYN-Flood hyökkäystä noudattamalla GitHub käyttäjän [santhisenan](https://github.com/santhisenan/SDN_DDoS_Simulation/blob/master/README.md) ohjeita.
+
+Aloitin luomalla ympäristön. Siirryin SDN_DDoS_Simulation-tryout -hakemistoon kotihakemistosta komennolla: ```cd lab/02-SDN_DDoS_Simulation-tryout/```
+
+Avasin toisen terminaali-ikkunan samaan hakemistoon ja ajoin komennon: ```ryu-manager main.py``` käynnistääkseni verkko-ohjaimen.
+
+<img width="496" height="202" alt="image" src="https://github.com/user-attachments/assets/d0466d7d-42bf-41c3-bedf-7e845372de50" />
 
 
-### Kirjoita, miten ajoit hyökkäyksen ja miten kyseinen hyökkäys toimii
+Ajoin ensimmäisessä terminaalissa komennon: ```sudo python tree_topology.py```, joka luo skriptin perusteella verkkotopologian ja alkaa floodaamaan.
+
+Avasin vielä kolmannen terminaali-ikkunan, johon ajoin Wiresharkin root-oikeuksilla (jotta näen kaiken liikenteen verkossa) komennolla: ```sudo -E wireshark &``` ja valitsin kaikki äsken luodut hostit, eli: ```s1-eth1``` - ```s7-eth3```.
+
+**Skriptin output**:
+
+<img width="388" height="283" alt="image" src="https://github.com/user-attachments/assets/551a7398-2ac4-4439-a694-04fcb50f4698" />
+
+**Wireshark**:
+
+<img width="1567" height="757" alt="image" src="https://github.com/user-attachments/assets/102bb6f0-5285-4195-b420-3baf8488ce0d" />
+
+
+- Tavaraa tuli järjettömän paljon lyhyessä ajassa, mutta tämä ei vaikuta silmääni SYN-Floodilta flagin perusteella.
+
+Overall tuntuu, että en saanut tätäkään toimimaan aivan kuten olisin halunnut. Ehkä ongelma on virtuaalikoneessa, ehkä käyttäjässä. 
+
+
 
 
 ## Lähteet
