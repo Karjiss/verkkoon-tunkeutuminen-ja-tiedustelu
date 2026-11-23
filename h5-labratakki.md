@@ -230,5 +230,25 @@ Overall tuntuu, että en saanut tätäkään toimimaan aivan kuten olisin halunn
 
 
 
-
 ## Lähteet
+
+
+Abnormal. 31.8.2026. TCP Session Hijacking: How It Works and How to Detect It. Luettavissa: https://abnormal.ai/learning/tcp-session-hijacking.
+
+Cloudflare. s.a. SYN flood attack. Luettavissa: https://www.cloudflare.com/learning/ddos/syn-flood-ddos-attack/. 
+
+Jaksi. 2024. sshesame. GitHub-repo. Luettavissa: https://github.com/jaksi/sshesame.
+
+Karvinen, T. & Iso-Anttila, L. 2026. Verkkoon tunkeutuminen ja tiedustelu. URL: https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/. Luettu: 23.11.2026.
+
+Pico. s.a. What is a TCP Reset (RST)? Luettavissa: https://www.pico.net/kb/what-is-a-tcp-reset-rst/.
+
+santhisenan s.a. SDN_DDoS_Simulation. GitHub. Luettavissa: https://github.com/santhisenan/SDN_DDoS_Simulation/blob/master/README.md. .
+
+ssam246 s.a. Network-Security-Lab. GitHubä-repo. Luettavissa: https://github.com/ssam246/Network-Security-Lab/tree/main.
+
+Stack Overflow 2021. X11 connection rejected because of wrong authentication in Mininet. Luettavissa: https://stackoverflow.com/questions/67319171/x11-connection-rejected-because-of-wrong-authentication-in-mininet.
+
+Sudo Manual s.a. Sudo 1.8.10. Luettavissa: https://www.sudo.ws/docs/man/1.8.10/sudo.man/.
+
+Iso-Anttila, L. 2025. Luentokalvot.
